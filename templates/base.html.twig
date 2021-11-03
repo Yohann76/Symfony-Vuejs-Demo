@@ -14,6 +14,13 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {# {% block body %}{% endblock %} #}
+
+        {% verbatim %}
+            <div id="app">
+                {{ message }}
+            </div>
+        {% endverbatim %}
+
     </body>
 </html>
