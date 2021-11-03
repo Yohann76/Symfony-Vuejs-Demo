@@ -1,8 +1,7 @@
 import Vue from 'vue'
+import DemoComponent from "./DemoComponent";
 
 new Vue({
-    el: '#app',
-    data: {
-        message: 'Hello Vue!'
-    }
-})
+    components: { DemoComponent },
+    template: "<DemoComponent />"
+}).$mount("#demoComponent ");
